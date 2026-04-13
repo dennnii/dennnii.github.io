@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Погода</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">🌤️ Сегодня </a>
+        <a href="week.html">📅 Неделя </a>
+        <a href="settings.html">⚙️ Настройки </a>
+    </nav>
+    <main>
+        <div class="weather-card" id="today-weather">
+            <div class="weather-icon" id="weather-icon">☁️</div>
+            <h2 id="city-display">Москва</h2>
+            <div class="temp" id="current-temp">2°</div>
+            <div class="desc" id="current-desc">Облачно</div>
+        </div>
+    </main>
+    
+    <script src="js/weather.js"></script>
+    <script>
+        loadAndDisplayWeather();
+    </script>
+</body>
+</html>

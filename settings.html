@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки</title>
+    <link rel="stylesheet" href="css/settings.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">🌤️ Сегодня</a>
+        <a href="week.html">📅 Неделя</a>
+        <a href="settings.html" class="active">⚙️ Настройки</a>
+    </nav>
+    
+    <main>
+        <div class="settings-card">
+            <h2>Выберите город</h2>
+            
+            <div class="city-buttons">
+                <button class="city-btn" onclick="setCityAndSave('Москва')">Москва</button>
+                <button class="city-btn" onclick="setCityAndSave('Санкт-Петербург')">Санкт-Петербург</button>
+                <button class="city-btn" onclick="setCityAndSave('Петрозаводск')">Петрозаводск</button>
+                <button class="city-btn" onclick="setCityAndSave('Нижний Новгород')">Нижний Новгород</button>
+                <button class="city-btn" onclick="setCityAndSave('Казань')">Казань</button>
+                <button class="city-btn" onclick="setCityAndSave('Екатеринбург')">Екатеринбург</button>
+            </div>
+            
+            <div id="settings-message" class="message"></div>
+            <hr style="margin: 10px 0;">
+            
+            <h2>Единицы измерения</h2>
+            <div class="unit-buttons">
+                <button class="unit-btn" onclick="setUnit('celsius')" id="cels-btn">🌡️ Градусы Цельсия (°C)</button>
+                <button class="unit-btn" onclick="setUnit('fahrenheit')" id="fahrenheit-btn">🌡️ Градусы Фаренгейта (°F)</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/weather.js"></script>
+</body>
+</html>

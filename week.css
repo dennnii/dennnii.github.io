@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    min-height: 100vh;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 1.8rem;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+nav a.active {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+h2 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.forecast-list {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 0.5rem;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.forecast-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.forecast-item:hover {
+    background: rgba(17, 153, 142, 0.1);
+    border-radius: 20px;
+    transform: translateX(5px);
+}
+
+.forecast-item:last-child {
+    border-bottom: none;
+}
+
+.forecast-day {
+    font-weight: bold;
+    color: #11998e;
+    font-size: 1.1rem;
+    min-width: 70px;
+}
+
+.forecast-temp {
+    color: #38ef7d;
+    font-weight: bold;
+    font-size: 1.3rem;
+    min-width: 70px;
+    text-align: right;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.forecast-desc {
+    color: #666;
+    font-size: 1rem;
+    flex: 1;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.loading {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    font-size: 1.1rem;
+}
